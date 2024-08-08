@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+#stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+#stars input[type="radio"] {
+    display: none;
+}
+
+#stars label {
+    font-size: 2rem;
+    color: gray;
+    cursor: pointer;
+}
+
+#stars input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
